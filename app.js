@@ -1,4 +1,6 @@
 let userInput = document.getElementById('date');
+
+// ogranicenje da ne moze da se bira datum koji jos nije bio
 userInput.max = new Date().toISOString().split('T')[0];
 
 let result = document.getElementById('result');
